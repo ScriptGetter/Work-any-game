@@ -1,0 +1,43 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("EnchantedV4000 Hub", "Default")
+
+local Maintab = DrRayLibrary.newTab("Main", "ImageIdHere")
+
+Maintab.newButton("ESP", "FIND PLAYER IN MAP", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+    print('button pressed')
+end)
+
+Maintab.newToggle("Toggle", "Dont Click (EVIL 😈) (*BUG*)", false, function(toggleState)
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+        loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+    end
+end)
+
+Maintab.newButton("Speed", "Set your speed (credits)", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DH4b3T5S"))();
+    print('button pressed')
+end)
+
+Maintab.newButton("Inf yield", "use if you want", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print('Hello!')
+end)
+
+local Maintab = DrRayLibrary.newTab("🎲 Misc", "ImageIdHere")
+
+Maintab.newButton("Owner EnchantedV4000", "its for credits", function()
+    print('Hello!')
+end)
+
+window:Toggle()
+
+window:Open()
+
+window:Close()
+
+window:Show()
